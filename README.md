@@ -1,9 +1,9 @@
-Gmail: Always Show Bottom Icons in Compose Mode
+Airbnb: Chrome extension that adds @Airbnb fee to listing subtotal
 ============
 
-Always display icons at bottom of Gmail. See following tweet for more info:
+For more info:
 
-https://twitter.com/Stammy/status/416291727981281280
+https://twitter.com/soopa/status/417084486992416768
 
 1. Clone this repo
 2. Visit chrome://extensions in your browser (or open up the Chrome menu by clicking the icon to the far right of the Omnibox:  The menu's icon is three horizontal bars.. and select Extensions under the Tools menu to get to the same place).

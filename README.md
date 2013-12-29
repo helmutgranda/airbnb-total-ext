@@ -11,3 +11,7 @@ https://twitter.com/soopa/status/417084486992416768
 4. Click Load unpacked extension… to pop up a file-selection dialog.
 5. Navigate to the directory in which your extension files live, and select it.
 
+> Currently it only works on landing pages that have all the info, does not work when users update reservation info:
+
+Sample:
+https://www.airbnb.com/rooms/1190619?checkin=01%2F08%2F2014&checkout=01%2F23%2F2014&guests=2

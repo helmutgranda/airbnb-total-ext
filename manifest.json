@@ -87,8 +87,8 @@
 
   // http://code.google.com/chrome/extensions/manifest.html#permissions
   "permissions": [
-    "http://www.airbnb.com/", // Refer to http://goo.gl/CPeqK http://goo.gl/U3Vev
-    "https://www.airbnb.com/", // Refer to http://goo.gl/CPeqK http://goo.gl/U3Vev
+    "http://www.airbnb.com/rooms/", // Refer to http://goo.gl/CPeqK http://goo.gl/U3Vev
+    "https://www.airbnb.com/rooms/", // Refer to http://goo.gl/CPeqK http://goo.gl/U3Vev
     "bookmarks", // http://code.google.com/chrome/extensions/bookmarks.html
     "chrome://favicon/",
     "clipboardRead", // document.execCommand('paste').
@@ -139,9 +139,9 @@
   
   "content_scripts": [
     {
-      "matches": ["https://www.airbnb.com/*"],
+      "matches": ["https://www.airbnb.com/rooms/*"],
       "css": ["src/contentStyle.css"],
-      "js": ["lib/jquery.min.js", "lib/jquery.waituntilexists.js","src/contentScript.js"]
+      "js": ["lib/jquery.min.js","src/contentScript.js"]
     }
   ],
   

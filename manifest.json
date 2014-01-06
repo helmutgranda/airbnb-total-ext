@@ -1,54 +1,24 @@
 {
-
-  "name": "Airbnb Add Total",
-  "version": "1",
-  "description": "Display total.",
-  "icons": { "16": "icons/icon16.png",
-             "48": "icons/icon48.png",
-            "128": "icons/icon128.png" },
-  "default_locale": "en",
-
-  //============================================================================
-  // DECLARE AT MOST ONE OF THE FOLLOWING UI EXPOSURES
-  // (A SAMPLE BROWSER ACTION IS PROVIDED BY DEFAULT)
-  //============================================================================
-
-  // http://code.google.com/chrome/extensions/browserAction.html
-  "browser_action": {
-    "default_icon":  "icons/icon19.png", // optional
-    "default_title": "airbnb add total",     // optional; shown in tooltip
-    "default_popup": "src/popup.html"    // optional
-  },
-
-  
-
-  //============================================================================
-  // PERMISSIONS
-  //============================================================================
-
-  // http://code.google.com/chrome/extensions/manifest.html#permissions
-  "permissions": [
-    "http://www.airbnb.com/rooms/", // Refer to http://goo.gl/CPeqK http://goo.gl/U3Vev
-    "https://www.airbnb.com/rooms/" // Refer to http://goo.gl/CPeqK http://goo.gl/U3Vev
-
-  ],
-
-
-  //============================================================================
-  // IMPLEMENTING THE INNARDS OF YOUR EXTENSION
-  //============================================================================
-  
-  "content_scripts": [
-    {
-      "matches": ["https://www.airbnb.com/rooms/*"],
-      "css": ["src/contentStyle.css"],
-      "js": ["lib/jquery.min.js","src/contentScript.js"]
-    }
-  ],
-  
-
-  // The new mandatory manifest version
-  "manifest_version": 2
-
-
+	"manifest_version": 2,
+	"name": "Airbnb Add Total",
+	"version": "1.0.0",
+	"description": "xtension adds @Airbnb fee to listing subtotal and then shows cost per guest.",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "browser_action": {
+        "default_icon": "icons/icon19.png",
+        "default_title": "airbnb add total",
+        "default_popup": "src/popup.html"
+    },
+    "permissions": [ "http://www.airbnb.com/rooms/", "https://www.airbnb.com/rooms/"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.airbnb.com/rooms/*"],
+            "css": ["src/contentStyle.css"],
+            "js": ["lib/jquery.min.js","src/contentScript.js"]
+        }
+    ]
 }
